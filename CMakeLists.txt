@@ -4,4 +4,4 @@ project(Sandbox)
 
 add_executable(helloworld)
 
-target_sources(helloworld PRIVATE sources/main.cpp)
+target_sources(helloworld PRIVATE source/main.cpp)
