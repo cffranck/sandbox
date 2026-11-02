@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest 
     steps:
       - uses: actions/checkout@v7
-      - run: mkdir build
-      - run: rm -rf build/*
-      - run: g++ source/main.cpp -o build/helloworld
+      - run: rm -rf build
+      - run: cmake -S . -B build
+      - run: cmake --build build
       - run: build/helloworld
