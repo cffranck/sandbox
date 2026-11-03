@@ -4,4 +4,5 @@ project(Sandbox)
 
 add_executable(helloworld)
 
-target_sources(helloworld PRIVATE source/main.cpp)
+target_sources(helloworld PRIVATE source/main.cpp source/myfun.cpp)
+target_include_directories(helloworld PRIVATE include/)
