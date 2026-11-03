@@ -15,4 +15,5 @@ jobs:
       - run: rm -rf build
       - run: cmake -S . -B build
       - run: cmake --build build
+      - run: build/test_myfun
       - run: build/helloworld
