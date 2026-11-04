@@ -15,4 +15,5 @@ jobs:
       - run: rm -rf build
       - run: bash ./scripts/build.sh
       - run: build/test_myfun
+      - run: echo $?
       - run: build/helloworld
