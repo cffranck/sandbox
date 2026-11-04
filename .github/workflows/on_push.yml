@@ -13,6 +13,6 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - run: rm -rf build
-      - run: ./scripts/build.sh
+      - run: bash ./scripts/build.sh
       - run: build/test_myfun
       - run: build/helloworld
