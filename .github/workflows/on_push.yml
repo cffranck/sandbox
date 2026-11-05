@@ -11,6 +11,7 @@ jobs:
   build:
     runs-on: ubuntu-latest 
     steps:
+      - run: echo "The event type is ${{ github.event_name }}
       - uses: actions/checkout@v7
       - run: rm -rf build
       - run: bash ./scripts/build.sh
