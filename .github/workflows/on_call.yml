@@ -1,0 +1,11 @@
+name: callable workflow
+
+on:
+  workflow_call:
+  workflow_dispatch: 
+
+jobs:
+  callableworkflow:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello from the callable workflow!"
