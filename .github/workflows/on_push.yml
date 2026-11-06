@@ -19,6 +19,7 @@ jobs:
       - run: echo $?
       - run: build/helloworld
       - uses: actions/upload-artifact@v7
+        if: ${{ github.event_name == 'push' }}
         with:
           name: application
           path: ./build/helloworld
