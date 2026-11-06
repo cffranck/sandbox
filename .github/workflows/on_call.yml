@@ -1,3 +1,5 @@
+name: callable workflow
+
 on:
   workflow_call:
   workflow_dispatch: 
