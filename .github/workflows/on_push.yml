@@ -8,9 +8,11 @@ on:
   workflow_dispatch:
 
 jobs:
+  call-workflow:
+    uses: ./.github/workflows/on_call.yml
+
   build:
     runs-on: ubuntu-latest 
-    uses: ./.github/workflows/on_call.yml
     steps:
       - run: echo "The event type is ${{ github.event_name }}"
       - uses: actions/checkout@v7
